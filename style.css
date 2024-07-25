@@ -24,6 +24,12 @@
     box-shadow: 0 0 22px rgba(163, 163, 163, 0.4); 
     border-color: rgba(255, 255, 255, 0);
 }
+.column{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 /*.img1{
     width: 450px;
     display: block;
