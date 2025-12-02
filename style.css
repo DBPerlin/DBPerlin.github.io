@@ -36,12 +36,11 @@ body{
 
 .navbar.sticky {
     padding: 30px 0;
-    box-shadow: 0px 10px 50px 5px #e3dfff;
 }
 
 .navbar.sticky::before {
     content: '';
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;    position: absolute;
+    background: url("images/blank.jpg") ;    position: absolute;
     opacity: 1;
     top: -10px;
     left: -10px;
@@ -172,10 +171,10 @@ section{
     padding: 120px 0;
     padding-bottom: 300px;
 }
-.about, .services, .skills, .contact, footer{
+.about, .projects, .skills, .contact, footer{
     font-family: 'Poppins',sans-serif;
 }
-.about .about-content, .services .serv-content, .skills .skills-content, .contact, .contact-content{
+.about .about-content, .projects .projects-content, .skills .skills-content, .contact, .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -213,8 +212,8 @@ section .title::after{
 }
 /* about section styling */
 .about{
-
-    background-size: 2000px;
+     background: url("images/blank.jpg");
+     background-size: 2000px;
 }
 .about .title::after{
     content: "Who I am";
@@ -268,20 +267,64 @@ section .title::after{
      border: 2px solid #b99fff;
      background:none;
  }
- 
- /* services styling */
- .services{
+
+/* Blog section styling (replaced/extended) */
+.blog{
+     background: url("images/blank.jpg");
+     background-size: 2000px;
+     padding: 120px 0;
+}
+.blog .title::after{
+    content: "but it's actually just me sharing things i'm interested about";
+}
+
+.blog .blog-content{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog .blog-content .column{
+    flex: 1 1 300px;
+    min-width: 280px;
+}
+
+.blog .blog-content .left img{
+    width: 100%;
+    height: auto;
+    max-height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.blog .blog-content .right .text,
+.blog .blog-content .right .text span{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.blog .blog-content .right .paragraph{
      color: rgb(0, 0, 0);
-     background:rgb(0, 0, 0);
-     background: url("images\d230052ba468712e762f2c732dba1f30.jpg");
+     font-size: 18px;
+     line-height: 1.6;
+     text-align: justify;
+     margin-top: 8px;
+}
+ 
+ /* projects styling */
+ .projects{
+     background: url("images/blank.jpg");
      background-size: 2000px;
  }
- .services .title::before{
+ .projects .title::before{
      background: none;}
- .services .title::after{
+ .projects .title::after{
      background: none;     content: "What I've Done";
  }
- .services .serv-content .card{
+ .projects .projects-content .card{
      width: calc(33% - 20px);
      text-align:center;
      background:none;
@@ -290,24 +333,24 @@ section .title::after{
      cursor: pointer;
      transition: all 0.3s ease;
  }
- .services .serv-content .card:hover {
+ .projects .projects-content .card:hover {
      background:  none;
  }
- .services .serv-content .card .box{
+ .projects .projects-content .card .box{
       transition: all 0.3s ease;
  }
- .services .serv-content .card:hover .box{
+ .projects .projects-content .card:hover .box{
       transform: scale(1.05);
 }
- .services .serv-content .card i{
+ .projects .projects-content .card i{
      font-size: 50px; 
      color: #26008f;
      transition:color 0.3s ease;
  }
- .services .serv-content .card:hover i{
+ .projects .projects-content .card:hover i{
     color: #26008f;
 }
- .services .serv-content .card .text{
+ .projects .projects-content .card .text{
      font-size: 25px;
      font-weight: 500;
      margin: 10px 0 7px 0;
@@ -316,8 +359,8 @@ section .title::after{
 /* Skills Section Styling */
 
 .skills{
-    background: url("images\d230052ba468712e762f2c732dba1f30.jpg");
-    background-size: 2000px;
+     background: url("images/blank.jpg");
+     background-size: 2000px;
 }
 
 .skills .title::after{
@@ -376,8 +419,12 @@ section .title::after{
     border-radius: 10px;
  }
  #css-icon:hover{
-    -webkit-filter: drop-shadow(0 0 10px #0078d7);
-    filter: drop-shadow(0 0 10px #0078d7);
+    -webkit-filter: drop-shadow(0 0 10px #3d81ff);
+    filter: drop-shadow(0 0 10px #389fff);
+ }
+ #linux-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #b1b1b1);
+    filter: drop-shadow(0 0 10px #b1b1b1);
  }
  #js-icon:hover{
     -webkit-filter: drop-shadow(0 0 10px #f0db4f);
@@ -387,70 +434,55 @@ section .title::after{
     -webkit-filter: drop-shadow(0 0 10px #61DBFB);
     filter: drop-shadow(0 0 10px #61DBFB);
  }
- #flutter-icon:hover{
-    -webkit-filter: drop-shadow(0 0 10px #44d1fd);
-    filter: drop-shadow(0 0 10px #44d1fd);
+ #typescript-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #3d81ff);
+    filter: drop-shadow(0 0 10px #389fff);
  }
  #html-icon:hover{
-    -webkit-filter: drop-shadow(0 0 10px #e34c26);
-    filter: drop-shadow(0 0 10px #e34c26);
+    -webkit-filter: drop-shadow(0 0 10px #ff943d);
+    filter: drop-shadow(0 0 10px #ff8d4b);
  }
- #vscode-icon:hover{
-     -webkit-filter: drop-shadow(0 0 10px #0078d7);
-    filter: drop-shadow(0 0 10px #0078d7);
+ #github-icon:hover{
+     -webkit-filter: drop-shadow(0 0 10px #929292);
+    filter: drop-shadow(0 0 10px #cecece);
  }
  #nodejs-icon:hover{
-     -webkit-filter: drop-shadow(0 0 10px #3c873a);
-    filter: drop-shadow(0 0 10px #3c873a);
+     -webkit-filter: drop-shadow(0 0 10px #64d460);
+    filter: drop-shadow(0 0 10px #67db63);
  }
- #cpp-icon:hover{
-    -webkit-filter: drop-shadow(0 0 10px #0080ff);
-    filter: drop-shadow(0 0 10px #0080ff);
+ #figma-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #ff9b7d);
+    filter: drop-shadow(0 0 10px #be6fff);
 }
-
- 
-/* .skills .skills-content .right .bars{
-    color: white;
- margin-bottom: 15px;
+ #docker-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #3d81ff);
+    filter: drop-shadow(0 0 10px #389fff);
 }
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-} */
-/* .skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
+ #git-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #ff943d);
+    filter: drop-shadow(0 0 10px #ff8d4b);
 }
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
+ #postgresql-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #3d81ff);
+    filter: drop-shadow(0 0 10px #389fff);
 }
-.skills .skills-content .right .line::before{
-    content:"";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #23b410;
+ #jest-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #5515256b);
+    filter: drop-shadow(0 0 10px #8d2d55);
 }
-.skills .skills-content .right .html::before{
-   width: 90%;
+ #nestjs-icon:hover{
+    -webkit-filter: drop-shadow(0 0 10px #ff62dd);
+    filter: drop-shadow(0 0 10px #ff579d);
 }
-.skills .skills-content .right .css::before{
-    width: 80%;
+ #c-icon:hover{
+     -webkit-filter: drop-shadow(0 0 10px #929292);
+    filter: drop-shadow(0 0 10px #cecece);
  }
- .skills .skills-content .right .flutter::before{
-    width: 70%;
- } */
 
  /* contact section styling */
  .contact{
-    background: url("images\d230052ba468712e762f2c732dba1f30.jpg");
-    background-size: 2000px;
+     background: url("images/blank.jpg");
+     background-size: 2000px;
  }
  .contact .title::after{
      content: "Get in touch";
@@ -532,14 +564,24 @@ section .title::after{
      padding-top: 10px;
      resize: none;
 }
-.contact .right form .button{
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.button-container form .button{
     height: 47px;
     width: 170px;
+    display: flex;
+    justify-content: center;
 }
-
-.contact .right form .button button{
-    width: 100%;
-    height: 100%;
+.msg-button {
+    height: 47px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid #26008f;
     background: none;
     color: #26008f;
@@ -547,8 +589,9 @@ section .title::after{
     font-weight: 500;
     border-radius: 6px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
-.contact .right form .button button:hover{
+.msg-button:hover {
     background: none;
     color: #b99fff;
     border: 2px solid #b99fff;
@@ -556,7 +599,8 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;    padding: 20px 23px;
+    background: url("images/blank.jpg") ;
+    padding: 20px 23px;
     color: rgb(0, 0, 0);
 }
 
@@ -592,9 +636,9 @@ footer i:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #b99fff;
-    box-shadow: 0 0 10px #926aff;
-    color: #b99fff;
+    background: #26008f;
+    box-shadow: 0 0 5px #d3d3d3;
+    color: #ffffff;
     border: none;
     outline: none;
     cursor: pointer;
@@ -602,8 +646,8 @@ footer i:hover{
 }
 
 #btnScrollToTop:active, #btnScrollToTop:hover{
-    background: #b99fff;
-    box-shadow: 0px 0px 20px #926aff;
+    background: #26008f;
+    box-shadow: 0px 0px 20px #c4c4c4;
 }
 
 .progress-container {
@@ -728,7 +772,7 @@ footer i:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .projects .projects-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -747,7 +791,7 @@ footer i:hover{
     .home .home-content .text-3 {
         font-size: 32px;
     }
-    .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
+    .projects .projects-content .card, .skills .skills-content .column,.contact .contact-content .column{
         width: 100%;
     }
 }
