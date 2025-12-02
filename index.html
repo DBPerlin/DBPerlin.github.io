@@ -33,14 +33,6 @@
    <!-- SWEET ALERT -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-   <!-- EMAIL JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("service_3uydnjq");
-    })();
-  </script>
-
 </head>
 
 <body>
@@ -50,14 +42,15 @@
       </div> 
       <div class="max-width">
         <div class="logo">
-          <a href="#">My<span> Portfolio</span></a>
+          <a href="#">My<span> Website</span></a>
         </div>
         <ul class="menu">
           <li><a href="#home" class="menu-btn">Home</a></li>
           <li><a href="#about" class="menu-btn">About me</a></li>
-          <li><a href="#services" class="menu-btn">Projects</a></li>
+          <li><a href="#projects" class="menu-btn">Projects</a></li>
           <li><a href="#skills" class="menu-btn">Skills</a></li>
           <li><a href="#contact" class="menu-btn">Contact</a></li>
+          <li><a href="blog.html" class="menu-btn">Blog</a></li>
         </ul>
         <div class="menu-btn">
           <i class="material-icons">menu</i>
@@ -90,10 +83,11 @@
         </div>
         <div class="column right" data-aos="fade-up">
           <div class="text">
-            Hi! I'm Manu. Welcome to my website.
+            Hi! Welcome to my portfolio.
           </div>
           <p class="paragraph">
-            I'm a software engineering student. Nemo sunt, ex ad numquam, omnis natus ab a quia architecto provident tenetur nostrum incidunt optio ullam illo accusamus aperiam distinctio cum unde nisi fugiat non. Beatae delectus similique quod tenetur corporis tempora. Itaque doloremque rerum quas et minima iste atque laborum.
+            I’m Manuella, a 20-year-old Software Engineering student at the University of Brasília, currently in my seventh semester. I’m passionate about technology in all its forms — from building software to exploring hardware as a hobby. I learn quickly, enjoy solving complex problems, and bring a proactive, hands-on attitude to everything I work on.
+            Beyond university and tech projects, I’m a bit of a nerd at heart. I love digital and board games, experimenting with electronics, and diving into anything that sparks my curiosity. It's all about creating meaningful solutions, making a real impact.
           </p>
           <a href="{{GOOGLE DRIVE LINK FOR RESUME}}">Download
             Resume</a>
@@ -102,11 +96,11 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
     <div class="max-width">
       <h2 class="title" data-aos="fade-down">My Projects</h2>
-      <div class="serv-content">
+      <div class="projects-content">
         <div class="card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
@@ -140,44 +134,55 @@
     </div>
   </section>
 
-  <!-- skills section services -->
+  <!-- skills section projects -->
   <section class="skills" id="skills">
     <div class="max-width" data-aos="fade-down">
-      <h2 class="title" data-aos="fade-up">My Skills</h2>
+      <h2 class="title" data-aos="fade-up" >My Skills</h2>
       <div class="skills-content">
         <div class="column left">
           <div class="text">
-            My creative skills & experiences.
+            My skills & experiences.
           </div>
           <p class="paragraph-2">
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum neque velit, totam exercitationem cum harum error possimus nostrum voluptatibus recusandae? Laborum, velit aperiam! Ex ratione blanditiis assumenda distinctio nesciunt. Voluptatibus!
+           Over time, I’ve worked and gained practical experience with many different tools and technologies. These stacks are some of the key ones I've worked with.
           </p>
-          <a href="#about">Read More</a>
+          <a href="https://drive.google.com/drive/folders/1-rtg-gBpwdfy49R1ebh17Bt2e3zqhFkN?usp=sharing">My certifications</a>
         </div>
         <div class="column right skill-box">
           <div class="icons">
             <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon" data-aos="flip-left">
             <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
             <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-flutter.svg" alt="flutter" id="flutter-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-typescript.png" alt="typescript" id="typescript-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
           </div>
           <div class="icons">
             <img src="images\skill-icons\icons8-html-5.svg" alt="html", id="html-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-linux.png" alt="linux" id="linux-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-github-2019.png" alt="github" id="github-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-figma.png" alt="figma" id="figma-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-docker-48.png" alt="docker", id="docker-icon" data-aos="flip-left">
+      </div>
+          <div class="icons">
+            <img src="images\skill-icons\icons8-git-48.png" alt="git", id="git-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-postgresql-48.png" alt="postgresql" id="postgresql-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-jest-48.png" alt="jest" id="jest-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-nestjs-48.png" alt="nestjs" id="nestjs-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-c-48.png" alt="c" id="c-icon" data-aos="flip-left">
       </div>
   </section>
 
-  <!-- Contact Section -->
+<!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="max-width">
       <h2 class="title" data-aos="fade-down">Contact Me</h2>
       <div class="contact-content">
         <div class="column left" data-aos="flip-left">
           <div class="text">Let's Get in Touch</div>
-          <p class="paragraph-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium autem voluptas fugit voluptatibus deleniti quia culpa commodi, ipsum nulla modi.
+          <p class="paragraph-3">I'm always open to new opportunities! Whether it's a project or a potential role, if you're interested in working with me, feel free to reach out by email.
           </p>
+        </div>
+        <div class="column right" data-aos="flip-right">
           <div class="icons">
             <div class="row">
               <i class="fas fa-user"></i>
@@ -193,39 +198,14 @@
                 <div class="sub-title">Brasília, DF - Brasil</div>
               </div>
             </div>
-            <div class="row">
-              <i class="fas fa-envelope"></i>
-              <div class="info">
-                <div class="head">Email</div>
-                <div class="sub-title">perlinmanuella@gmail.com</div>
-              </div>
-            </div>
           </div>
         </div>
-        <div class="column right" data-aos="flip-right">
-          <div class="text">
-            Message Me
-          </div>
-          <form action="#Contact">
-            <div class="fields">
-              <div class="field name">
-                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
-              </div>
-              <div class="field email">
-                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
-              </div>
-            </div>
-            <div class="field">
-              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
-            </div>
-            <div class="field textarea">
-              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
-            </div>
-            <div class="button">
-              <button onclick='sendMail()' type="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
+      </div>
+      <!-- Button moved here - outside contact-content -->
+      <div class="button-container">
+        <a href="mailto:perlinmanuella@gmail.com?subject=Just saw your website!&body=I'm interested in working with you." class="msg-button">
+          Message Me
+        </a>
       </div>
     </div>
   </section>
@@ -233,7 +213,7 @@
   <footer>
     <div class="text-center">
       <span>
-        Created By <a href="#">Manuella Perlin</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        Created By <a href="index.html#about">Manuella Perlin</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
         <div>
           <a href="https://www.linkedin.com/in/manuella-perlin/"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/DBPerlin"><i class="fab fa-github"></i></a>
