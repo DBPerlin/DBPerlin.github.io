@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuella Perlin</title>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+   <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script>
+
+   <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="index.html">My<span> Website</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html" class="menu-btn">Home</a></li>
+          <li><a href="index.html#about" class="menu-btn">About me</a></li>
+          <li><a href="index.html#services" class="menu-btn">Projects</a></li>
+          <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+          <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+          <li><a href="blog.html" class="menu-btn">Blog</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+<!-- Scroll to top button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+
+<!-- Blog section start -->
+  <section class="blog" id="blog">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down" >My Blog!</h2>
+      <br><br>
+      <div class="blog-content">
+
+<!-- FIRST POST -->
+        <div class="column left" data-aos="fade-right" >
+          <img src="images/blog/firstpost.jpg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            Hi! This is my first post!
+          </div>
+          <p class="paragraph">November 30th, 2025
+        </p>
+          <p class="paragraph"> Hello! As this is my first post, I'm not sure what to write about. It does feel a bit strange to be writing a blog post about writing a blog post, but here we are!
+            <br><br>
+            I wanted to start this blog as a way to share my thoughts and experiences with my future self. I hope to write about anything I feel like writing really, from my professional experiences to movies I think everyone should watch.
+            <br><br>
+            So, future Manu, I'll see you in a bit!
+            <br><br>
+            PS: I'll just leave a cute picture of a cat here so it doesn't feel too empty.
+        </p>
+        </div>
+<!-- END FIRST POST -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="index.html#about">Manuella Perlin</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div>
+          <a href="https://www.linkedin.com/in/manuella-perlin/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/DBPerlin"><i class="fab fa-github"></i></a>
+          <a href="{{YOUR YOUTUBE}}"><i class="fab fa-youtube"></i></a>
+        </div>
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({easing:'ease-in',delay:100,duration:300,offset:100});</script>
+</body>
+</html>
